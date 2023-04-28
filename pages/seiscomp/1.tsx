@@ -30,7 +30,7 @@ export default function Seiscomp1() {
                                     <td>PREESE_HALL</td>
                                     <td>KEELE</td>
                                     <td>KEELE 6TD</td>
-                                    <td>["all"]</td>
+                                    <td>{"\[\"all\"\]"}</td>
                                     <td>2011-04-07 15:00:00</td>
                                     <td>2011-04-28 09:00:00</td>
                                 </tr>
@@ -38,7 +38,7 @@ export default function Seiscomp1() {
                                     <td>PREESE_HALL</td>
                                     <td>KEELE</td>
                                     <td>KEELE 6TD</td>
-                                    <td>["all"]</td>
+                                    <td>{"\[\"all\"\]"}</td>
                                     <td>2011-04-07 15:00:00</td>
                                     <td>2011-04-28 09:00:00</td>
                                 </tr>
@@ -46,7 +46,7 @@ export default function Seiscomp1() {
                                     <td>PREESE_HALL</td>
                                     <td>KEELE</td>
                                     <td>KEELE 6TD</td>
-                                    <td>["all"]</td>
+                                    <td>{"\[\"all\"\]"}</td>
                                     <td>2011-04-07 15:00:00</td>
                                     <td>2011-04-28 09:00:00</td>
                                 </tr>
@@ -54,7 +54,7 @@ export default function Seiscomp1() {
                                     <td>PREESE_HALL</td>
                                     <td>KEELE</td>
                                     <td>KEELE 6TD</td>
-                                    <td>["all"]</td>
+                                    <td>{"\[\"all\"\]"}</td>
                                     <td>2011-04-07 15:00:00</td>
                                     <td>2011-04-28 09:00:00</td>
                                 </tr>
@@ -62,7 +62,7 @@ export default function Seiscomp1() {
                                     <td>PREESE_HALL</td>
                                     <td>KEELE</td>
                                     <td>KEELE 6TD</td>
-                                    <td>["all"]</td>
+                                    <td>{"\[\"all\"\]"}</td>
                                     <td>2011-04-07 15:00:00</td>
                                     <td>2011-04-28 09:00:00</td>
                                 </tr>
