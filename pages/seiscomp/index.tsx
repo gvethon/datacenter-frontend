@@ -1,14 +1,27 @@
 import Button from 'react-bootstrap/Button';
-import {Container, Navbar, Nav, Row, Col, Table} from "react-bootstrap";
+import {Col, Container, Row, Table} from "react-bootstrap";
 import Header from "@/src/Header";
 
 export default function Seiscomp() {
+    const seiscomps = [
+        {
+            "id": "1",
+            "host": "sheerwer.igf.edu.pl:18001",
+            "login": "mstaszek@igf.edu.pl"
+        },
+        {
+            "id": "2",
+            "host": "tytan.igf.edu.pl:18001",
+            "login": "idobrzycka"
+        }
+    ]
+
     return (
         <>
-            <Header />
+            <Header/>
             <Container className="mt-4">
                 <Row className="justify-content-lg-center">
-                    <Col className="col-lg-8">
+                    <Col className="col-lg-9">
                         <h2>Registered Seiscomp instances</h2>
                         <Table bordered className="mt-3">
                             <thead>
@@ -19,24 +32,19 @@ export default function Seiscomp() {
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>sheerwer.igf.edu.pl:18001</td>
-                                <td>mstaszek@igf.edu.pl</td>
-                                <td>
-                                    <Button href="seiscomp/1" variant="info" size="sm">View</Button>{' '}
-                                    <Button variant="warning" size="sm">Edit</Button>{' '}
-                                    <Button variant="danger" size="sm">Delete</Button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>tytan.igf.edu.pl:18001</td>
-                                <td>idobrzycka</td>
-                                <td>
-                                    <Button href="seiscomp/1" variant="info" size="sm">View</Button>{' '}
-                                    <Button variant="warning" size="sm">Edit</Button>{' '}
-                                    <Button variant="danger" size="sm">Delete</Button>
-                                </td>
-                            </tr>
+                            {seiscomps.map(seiscomp =>
+                                <>
+                                    <tr>
+                                        <td>{seiscomp.host}</td>
+                                        <td>{seiscomp.login}</td>
+                                        <td>
+                                            <Button href={`/seiscomp/${seiscomp.id}`} variant="info" size="sm">View</Button>{' '}
+                                            <Button variant="warning" size="sm">Edit</Button>{' '}
+                                            <Button variant="danger" size="sm">Delete</Button>
+                                        </td>
+                                    </tr>
+                                </>
+                            )}
                             </tbody>
                         </Table>
                     </Col>
